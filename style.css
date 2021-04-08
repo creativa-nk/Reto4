@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    box-sizing: border-box
+}
+
+header{
+    background: #1f1f1f;
+    color:white;
+    display:flex;
+
+}
+
+header span{
+    cursor:pointer;
+    padding:0.8em;
+    margin:0 0.2em;
+    background: rgb(0, 109, 160);
+    transition:all 0.4s; /* para que el cambio sea suave*/
+} 
+
+header span:hover{
+    background:rgb(6, 159, 230) ;
+    color:black;
+}
+
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.movie{
+    display: flex;
+    flex-direction: column;
+    padding:0.5em;
+}
