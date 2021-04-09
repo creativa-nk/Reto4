@@ -3,10 +3,10 @@
     box-sizing: border-box
 }
 
-body{
+ body{
     background-image:url("./img/cinema-background-illustration/inicio.jpg") ;
     background-size: cover; /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
-}
+} 
 
 header{
     background: #1f1f1f;

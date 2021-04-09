@@ -1,3 +1,8 @@
+function cambiar() {
+    document.body.style.backgroundImage = 'none';
+  }
+
+
 const renderMovies = movies => {
     for (const movie of movies){
         document.querySelector('main.movies').innerHTML+=`
