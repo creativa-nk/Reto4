@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
     <script src="script.js" async></script>
     <title>Api Peliculas</title>
 </head>
 <body>
     <header>
         <span onclick="getPopularMovies();cambiar()">Peliculas populares</span>
-        <span>Ultimas pelicilas</span>
+        <span onclick="getComingMovies();cambiar()">Ultimas pelicilas</span>
     </header>
     <main class="movies">
        
