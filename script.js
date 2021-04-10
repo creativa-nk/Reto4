@@ -1,5 +1,5 @@
 function cambiar() {
-    document.body.style.backgroundImage = 'none';
+    document.body.style.backgroundImage = 'url(./img/pared1.jpg)';
   }
 
 
@@ -7,8 +7,12 @@ const renderMovies = movies => {
     for (const movie of movies){
         document.querySelector('main.movies').innerHTML+=`
         <div class="movie">
-             <h2>${movie.title}</h2>
-             <img src="https://image.tmdb.org/t/p/w185${movie.poster_path}" alt="">
+            <div class='titulo'>
+                 <h2>${movie.title}</h2>
+            <div>
+            <div class='imgMovie'>  
+                  <img src="https://image.tmdb.org/t/p/w185${movie.poster_path}" alt="">
+            <div>
         </div>
         `
     }
