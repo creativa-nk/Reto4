@@ -25,8 +25,14 @@ function cambiar() {
             <div class='details'>  
                 <img src="https://image.tmdb.org/t/p/w185${movie.poster_path}" alt="imagen de la pelicula">
                 <div class='moreDetails'>
-                    <span class='popularidad'>Popularidad:${movie.popularity}</span>
+
+                    <h3 class='originalTitle'>${movie.original_title}</h3>
+                    <p class='orininalLanguage'>Idioma original: ${movie.original_language}</p>
+                    <p class='release'>Fecha de lanzamiento: ${movie.release_date}</p>
                     <p class='overview'>${movie.overview}</p>
+                    <p class='genre'>${movie.id.genres}</p>
+                    <p class='countries'>${movie.production_countries}</p>
+                    <span class='popularidad'>Popularidad:${movie.popularity}</span>
                 </div>
             </div>    
         </div>
