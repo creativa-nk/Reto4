@@ -17,17 +17,20 @@ function cambiar() {
 
   const getMovieDetailedHtml = movie =>{
     return `
-    <div class="movie" onclick='getMovieDetailed(${movie.id})'>
-        <div class='titulo'>
-             <h2>${movie.title}</h2>
-        <div>
-        <div class='imgMovie'>  
-              <img src="https://image.tmdb.org/t/p/w185${movie.poster_path}" alt="imagen de la pelicula">
-        <div>
-        <div class='movieDetails'
-            <span>Popularidad:${movie.popularity}</span>
-            <p>${movie.overview}</p>
-    </div>
+    <div class='movieDetails'>
+        <div class="theMovie" onclick='getMovieDetailed(${movie.id})'>
+            <div class='tituloDetails'>
+                <h2>${movie.title}</h2>
+            <div>
+            <div class='details'>  
+                <img src="https://image.tmdb.org/t/p/w185${movie.poster_path}" alt="imagen de la pelicula">
+                <div class='moreDetails'>
+                    <span class='popularidad'>Popularidad:${movie.popularity}</span>
+                    <p class='overview'>${movie.overview}</p>
+                </div>
+            </div>    
+        </div>
+    </div>    
     `
 }
 
