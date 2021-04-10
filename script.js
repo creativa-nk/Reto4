@@ -2,6 +2,10 @@ function cambiar() {
     document.body.style.backgroundImage = 'url(./img/pared1.jpg)';
   }
 
+/* function cambiarDetailed() {
+    document.body.style.backgroundImage = 'url(./img/detalles.jpg)';
+  }  */ 
+
   const getMovieHtml = movie =>{
       return `
       <div class="movie" onclick='getMovieDetailed(${movie.id})'>
@@ -64,6 +68,7 @@ const getMovieDetailed = movie_id =>{
     .then(res=>{
         const movie = res.data;
         document.querySelector('main.movies').innerHTML = getMovieDetailedHtml(movie)
+        document.body.style.backgroundImage = 'url(./img/detalles.jpg)';
     })
     .catch(console.error) //es lo mismo que escribir  error=>console.error(error)
 }
