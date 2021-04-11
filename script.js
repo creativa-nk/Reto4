@@ -1,10 +1,10 @@
-function cambiar() {
-    document.body.style.backgroundImage = 'url(./img/pared1.jpg)';
+function backgroundBlanco() {
+    document.body.style.backgroundImage = 'url(./img/multiBlanco.jpg)';
   }
 
-/* function cambiarDetailed() {
-    document.body.style.backgroundImage = 'url(./img/detalles.jpg)';
-  }  */ 
+ function backgroundAmarillo() {
+    document.body.style.backgroundImage = 'url(./img/multiAmarillo.jpg)';
+  }   
 
   const getMovieHtml = movie =>{
       return `
@@ -68,7 +68,7 @@ const getMovieDetailed = movie_id =>{
     .then(res=>{
         const movie = res.data;
         document.querySelector('main.movies').innerHTML = getMovieDetailedHtml(movie)
-        document.body.style.backgroundImage = 'url(./img/detalles.jpg)';
+        document.body.style.backgroundImage = 'url(./img/multiRojo.jpg)';
     })
     .catch(console.error) //es lo mismo que escribir  error=>console.error(error)
 }
