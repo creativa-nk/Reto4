@@ -1,5 +1,5 @@
-function backgroundBlanco() {
-    document.body.style.backgroundImage = 'url(./img/multiBlanco.jpg)';
+function backgroundAzul() {
+    document.body.style.backgroundImage = 'url(./img/multiAzul.jpg)';
   }
 
  function backgroundAmarillo() {
