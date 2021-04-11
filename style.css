@@ -30,41 +30,43 @@ header span:hover{
 }
 
 .movies{
-    /* background: rgb(0, 130, 65); */
+    /* background: rgb(0, 130, 65); */ 
     display: grid;
     grid-template-columns: repeat(10,1fr);
-    grid-gap: 2rem;
+    grid-gap: 1rem;
     grid-row-gap: 100px;
-    padding: 3em;
+    padding: 1em;
     margin-top: 2rem;
-    width: 70vw;
-    height: 70vh;
+    /* width: 70vw;
+    height: 70vh; */
+    width: 93%;
+    height: 90%;
     transition:all 2s;
-
-    /* flex-wrap: wrap;
-    justify-content: space-between;
-     */
+    margin: 5rem auto;
+  
 }
 
 
 .movie{
     /* margin: 10px; */ 
     padding: 10px;
-    background:rgb(218, 218, 218);
+    background:rgb(177, 177, 177);
     box-shadow: rgba(0, 0, 0, 0.774) 10px 5px 5px ; 
     display: flex;
     justify-content:center;
-    width: 100%;
-    height: 17rem;
+    width: 8vw;
+    height: 28vh;
     border-radius: 2%;
     border: 1px solid rgba(114, 114, 114, 0.63);
     cursor:pointer;   
+    
 }
 .titulo h2{
     background: rgb(235, 235, 235);
-    width:8rem;
-    height: 2.7rem;
-    font-size: 1.1em;
+    width:7vw;
+    height: 3.8vh;
+    padding: 0.1em;
+    font-size: 1em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
     overflow: hidden;
     border-radius: 5px;
@@ -74,8 +76,8 @@ header span:hover{
 .imgMovie img{
     margin-top: 10px;
    /*  background: indigo; */
-    width: 8rem;
-    height: 12rem;
+    width: 7vw;
+    height: 21vh;
     border-radius: 5px;
 }
 
