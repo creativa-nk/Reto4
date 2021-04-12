@@ -55,7 +55,7 @@ header span:hover{
     display: flex;
     justify-content:center;
     width: 8vw;
-    height: 28vh;
+    height: 29vh;
     border-radius: 2%;
     border: 1px solid rgba(114, 114, 114, 0.63);
     cursor:pointer;   
@@ -64,7 +64,7 @@ header span:hover{
 .titulo h2{
     background: rgb(235, 235, 235);
     width:7vw;
-    height: 3.8vh;
+    height: 4.2vh;
     padding: 0.1em;
     font-size: 1em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
@@ -75,10 +75,33 @@ header span:hover{
 
 .imgMovie img{
     margin-top: 10px;
-   /*  background: indigo; */
     width: 7vw;
     height: 21vh;
     border-radius: 5px;
+    position: relative;
+    
+}
+
+.average {
+    /* align-items: center; */
+    background-color:rgb(71, 72, 73);
+    /* height: 3.3vh; */
+    width: 3vw;
+    border: 2px solid rgb(168, 168, 168);
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    margin:-2.7em 0.4em;
+    position: absolute; 
+    width: 2em;
+  }
+
+.average p{
+    color: rgb(255, 253, 253);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: bolder;
+    font-size: 0.8em; 
+    margin: 0.5em auto;
 }
 
 .movieDetails{
@@ -101,14 +124,14 @@ header span:hover{
 } 
 
 .moreDetails{
-    margin-left: 355px;
+    margin-left: 30%;
 }
 
 .details img{
   float: left;  
   /* padding: 25px; */
-  width: auto;
-  height: 40vh;
+  width: 25vh;
+  height: auto;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.548) 4px 4px 5px ; 
 }
@@ -118,6 +141,33 @@ header span:hover{
     border-radius: 5px;
     margin-bottom: 20px;
     border: 1px solid rgba(139, 139, 139, 0.548) ;
+}
+
+.originalTitle span{
+    font-weight: initial;
+}
+
+.genres{
+    margin-top:0.1em;
+    font-weight: lighter;
+    font-size: 0.9em;
+}
+.ulDetails{
+    display: flex; 
+    margin: 0.3em 0em;
+    padding: 0;
+    list-style: none;
+    font-weight: lighter;
+    font-size: 0.7em;
+}
+li{
+    margin-right: 1em;
+}
+.averageDetails{
+    border: 1px solid black;
+    padding: 2px;
+    margin: 0;
+    font-size: 0.8em;
 }
 
 

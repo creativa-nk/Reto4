@@ -8,40 +8,57 @@ function backgroundAzul() {
 
   const getMovieHtml = movie =>{
       return `
-      <div class="movie" onclick='getMovieDetailed(${movie.id})'>
-          <div class='titulo'>
-               <h2>${movie.title}</h2>
-          <div>
-          <div class='imgMovie'>  
+        <div class="movie" onclick='getMovieDetailed(${movie.id})'>
+            
+            <div class='titulo'>
+                <h2>${movie.title}</h2>
+            <div>
+            <div class='imgMovie'>  
                 <img src="https://image.tmdb.org/t/p/w185${movie.poster_path}" alt="imagen de la pelicula">
-          <div>
-      </div>
+                    <div class='average'>
+                         <p>${movie.vote_average}</p>
+                     </div>
+            <div>
+        </div>
       `
   }
 
-  const getMovieDetailedHtml = movie =>{
-    return `
-    <div class='movieDetails'>
-        <div class="theMovie" onclick='getMovieDetailed(${movie.id})'>
-            <div class='tituloDetails'>
-                <h2>${movie.title}</h2>
-            <div>
-            <div class='details'>  
-                <img src="https://image.tmdb.org/t/p/w185${movie.poster_path}" alt="imagen de la pelicula">
-                <div class='moreDetails'>
+ /*  <span class='popularidad'>Popularidad:${movie.popularity}</span>
+     <p class='countries'>${movie.production_countries}</p> */
 
-                    <h3 class='originalTitle'>${movie.original_title}</h3>
-                    <p class='orininalLanguage'>Idioma original: ${movie.original_language}</p>
-                    <p class='release'>Fecha de lanzamiento: ${movie.release_date}</p>
-                    <p class='overview'>${movie.overview}</p>
-                    <p class='genre'>${movie.id.genres}</p>
-                    <p class='countries'>${movie.production_countries}</p>
-                    <span class='popularidad'>Popularidad:${movie.popularity}</span>
+
+
+  const getMovieDetailedHtml = movie =>{
+    let genres = []
+    movie.genres.map(genre => genres.push(genre.name));
+    let age = []
+    movie.genres.map(genre => genres.push(genre.))
+
+     return `
+            <div class='movieDetails'>
+                <div class="theMovie" onclick='getMovieDetailed(${movie.id})'>
+                    <div class='tituloDetails'>
+                        <h2>${movie.title}</h2>
+                    <div>
+                    <div class='details'>  
+                        <img src="https://image.tmdb.org/t/p/w185${movie.poster_path}" alt="imagen de la pelicula">
+                        <div class='moreDetails'>
+
+                            <h3 class='originalTitle'>${movie.original_title}<span>(${movie.release_date})</span></h3>
+                            <p class='genres'>${genres.join(', ')}</p>
+                            <ul class='ulDetails'>                               
+                                <li>idioma original: ${movie.original_language}</li>
+                                <li>${movie.runtime} min</li>
+                                <li class='averageDetails'>${movie.vote_average}</li>
+                            </ul>    
+                            
+                            <p class='overview'>
+                                <h4> Sinopsis:</h4> ${movie.overview}</p>
+                        </div>
+                    </div>    
                 </div>
             </div>    
-        </div>
-    </div>    
-    `
+            `
 }
 
 
