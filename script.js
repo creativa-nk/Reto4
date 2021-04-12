@@ -30,10 +30,8 @@ function backgroundAzul() {
 
   const getMovieDetailedHtml = movie =>{
     let genres = []
-    movie.genres.map(genre => genres.push(genre.name));
-    let age = []
-    movie.genres.map(genre => genres.push(genre.))
-
+    movie.genres.map(genre => genres.push(genre.name))
+   
      return `
             <div class='movieDetails'>
                 <div class="theMovie" onclick='getMovieDetailed(${movie.id})'>
@@ -47,7 +45,7 @@ function backgroundAzul() {
                             <h3 class='originalTitle'>${movie.original_title}<span>(${movie.release_date})</span></h3>
                             <p class='genres'>${genres.join(', ')}</p>
                             <ul class='ulDetails'>                               
-                                <li>idioma original: ${movie.original_language}</li>
+                                <li>${movie.original_language}</li>
                                 <li>${movie.runtime} min</li>
                                 <li class='averageDetails'>${movie.vote_average}</li>
                             </ul>    
@@ -57,8 +55,8 @@ function backgroundAzul() {
                         </div>
                     </div>    
                 </div>
-            </div>    
-            `
+            </div>
+  `
 }
 
 

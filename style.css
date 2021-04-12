@@ -19,14 +19,14 @@ header span{
     cursor:pointer;
     padding:0.8em;
     margin:0 0.5em;
-    background: rgb(0, 109, 160);
+    background: #1f1f1f;
     transition:all 0.4s; /* para que el cambio sea suave*/
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 } 
 
 header span:hover{
-    background:rgb(6, 159, 230) ;
-    color:black;
+    background:rgb(228, 228, 228) ;
+    color:rgb(7, 7, 7);
 }
 
 .movies{
@@ -145,10 +145,11 @@ header span:hover{
 
 .originalTitle span{
     font-weight: initial;
+    margin-left: 0.5em;
 }
 
 .genres{
-    margin-top:0.1em;
+    margin-top:0.2em;
     font-weight: lighter;
     font-size: 0.9em;
 }
@@ -156,12 +157,15 @@ header span:hover{
     display: flex; 
     margin: 0.3em 0em;
     padding: 0;
-    list-style: none;
     font-weight: lighter;
     font-size: 0.7em;
 }
+.ulDetails :first-child {
+    list-style: none;
+  }
+
 li{
-    margin-right: 1em;
+    margin-right: 1.5em;
 }
 .averageDetails{
     border: 1px solid black;
@@ -169,5 +173,4 @@ li{
     margin: 0;
     font-size: 0.8em;
 }
-
 
